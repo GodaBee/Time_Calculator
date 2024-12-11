@@ -1,0 +1,44 @@
+<!-- HTML dalis -->
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laiko skaičiuoklė</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laiko skaičiuoklė</h1>
+
+        <!-- Pradžios laikas -->
+        <label for="startTime">Pradžios laikas:</label>
+        <input type="text" id="startTime" placeholder="HH:MM arba HH:MM AM/PM" required>
+        <br>
+        <br>
+        <!-- Pradžios data -->
+        <label for="startDate">Pradžios data:</label>
+        <input type="date" id="startDate" required>
+        <br>
+        <br>
+        <!-- Pabaigos laikas -->
+        <label for="endTime">Pabaigos laikas:</label>
+        <input type="text" id="endTime" placeholder="HH:MM arba HH:MM AM/PM" required>
+        <br>
+        <br>
+        <!-- Pabaigos data -->
+        <label for="endDate">Pabaigos data:</label>
+        <input type="date" id="endDate" required>
+        <br>
+        <br>
+        <!-- Mygtukai -->
+        <button id="calculateBtn">Skaičiuoti</button>
+        <button id="showFormulaBtn">Parodyti formulę</button>
+        <br>
+        <!-- Rezultatas -->
+        <p id="result">Rezultatas: </p>
+        <p id="formula" style="display: none;">Formulė: skirtumas = (pabaigos data + pabaigos laikas) - (pradžios data + pradžios laikas)</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
